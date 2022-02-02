@@ -2,9 +2,10 @@
 class Bunny extends Animal
 {
     private $owner;
-    public function __construct($family, $food)
+    public function __construct($family, $food, $owner)
     {
         parent::__construct($family, $food);
+        $this->owner = $owner;
     }
     public function set_owner($owner)
     {
